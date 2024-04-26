@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bosque</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos para el cuerpo de la página */
+body {
+    background-image: url('fo4.jpg'); /* Reemplaza 'ruta/a/la/imagen/de/fondo.jpg' con la ruta de tu imagen de fondo */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   flex: 1; /* Para que el cuerpo ocupe el espacio restante */
+     
+}  
+
+/* Estilos para las imágenes */
+.isla-img {
+    max-width: 100%;
+   max-height: 200px;
+    
+   border: solid 2px blue;
+}
+
+/* Estilos para el botón */
+.btn-volver {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #0056b3;
+}
+h1
+{
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   font-weight: bold;
+   font-size: 50px;
+   text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">BOSQUE DE PIEDRA DEL TORO</h1>
+
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="bo1.jpg" class="img-fluid isla-img" alt="Imagen 1">
+        </picture>
+      </div>
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="bo2.jpg" class="img-fluid isla-img" alt="Imagen 2">
+        </picture>
+      </div>
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="bo3.jpg" class="img-fluid isla-img" alt="Imagen 3">
+        </picture>
+      </div>
+    </div>
+   <center>
+        <div class="row mt-5">
+      <div class="col-md-6">
+        <h2>Descripción</h2>
+       <strong>
+        El Bosque Piedra del Toro, está ubicado en el Distrito de Morropón a 3 km. del distrito de Morropón. Abarca un área de 745.25 Ha. con un rango altitudinal que varía desde 200 m.s.n.m., en los caseríos San Luis, Piedra del Toro, La Unión; hasta los 900 m.s.n.m. en la cumbre del (Cerro Negro) y forma parte de la Sub cuenca La Gallega de la Cuenca del río Piura, este bosque pertenece a la Ecorregión del Bosque Seco Ecuatorial; considerado como el ecosistema más frágil del país debido a limitaciones impuestas por factores eco climáticos. Este bosque alberga una diversidad única, actuando como un banco de germoplasma in situ, permitiendo preservar el gran potencial de plantas y animales. El clima durante el año es normal, es cálido y árido en las partes inferiores y templado semiárido en la parte alta y además se presentan dos estaciones bien definidas, la época de lluvias (verano) generalmente en enero – abril en la que se encuentra cerca del 85% de la precipitación pluvial total anual y la época seca (invierno) en los meses de mayo – diciembre, siendo un periodo de escasa precipitación y condiciones de aridez; estos factores son variables de un año a otro, dando el caso de temporadas fuerte precipitaciones, como es el caso del fenómeno del niño.
+       </strong>
+      </div>
+      
+      <div class="col-md-6">
+        
+            <div style="margin: 20px;">
+                <img src="direccion.png" alt="WhatsApp">
+            
+            <strong>Dirección</strong>
+            <p>R3W7+WH, Piedra El Toro 20310</p>
+        </div>
+       
+        <div class=" map-responsive ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7947.389384767395!2d-79.9427782623668!3d-5.152746993775598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a8ff6f3878bdf%3A0x20e5e406ce69915a!2sLa%20Piedra%20del%20Toro!5e0!3m2!1ses!2spe!4v1713147301746!5m2!1ses!2spe" width="600" height="450" style="border:solid 3px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+</center>
+
+    <div class="row mt-5">
+      <div class="col text-center">
+        <button class="btn btn-primary" onclick="window.history.back()">Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=TuClaveAPI&callback=initMap" async defer></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

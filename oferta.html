@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia</title> 
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark name ">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="logo.jpg" alt="Logotipo" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <div class="texto text-md-right">
+                        <h1 class="texto1">"Agencia de Viajes"</h1>
+                        <p class="text2">El Mundo lo recorres Tu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oferta.html">Ofertas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="cuerpo" style="background-image: none; background-color: blanchedalmond;">
+        <section>
+            <div class="container my-5">
+                <h3 class="text-center" style="margin-bottom:30px">Nuestros servicios</h3>
+                <div class="row pt-3">
+                    <div class="col-md-4" style="margin-bottom:30px">
+                        <div class="card">
+                            <img class="card-img-top" src="mangalesvice.jpg" alt="Manglares de Vice">
+                            <div class="card-body">
+                                <h5 class="text-justify">Manglares de Vice <span>s/ 299.00</span> por persona.</h5>
+                                <button class="btn btn-success" data-toggle="modal" data-target="#tours1"> <i class="fa fa-eye"></i> Más información</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-bottom:30px">
+                        <div class="card">
+                            <img class="card-img-top" src="islafoco.jpg" alt="Isla Faco">
+                            <div class="card-body">
+                                <h5 class="text-justify">Isla Faco/ 2N desde <span>s/ 390.00</span> por persona.</h5>
+                                <button class="btn btn-success" data-toggle="modal" data-target="#tours2"> <i class="fa fa-eye"></i> Más información</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-bottom:30px">
+                        <div class="card">
+                            <img class="card-img-top" src="parquepura.jpg" alt="Parque Kurt Beer">
+                            <div class="card-body">
+                                <h5 class="text-justify">PARQUE KURT BEER / 3N desde <span>s/ 450.00</span> por persona.</h5>
+                                <button class="btn btn-success" data-toggle="modal" data-target="#tours3"> <i class="fa fa-eye"></i> Más información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>  
+
+    <!-- Modales -->
+    <div class="modal fade" id="tours1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Manglares de Vice <span>s/ 299.00</span> por persona.</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Incluye</p>
+                    <ol>
+                        <li>01 NOCHE DE ALOJAMIENTO CON PISCINA EN HABITACIÓN MATRIMONIAL</li>
+                        <li>DESAYUNOS EN HOTEL</li>
+                        <li>TOUR NADO CON TORTUGAS EN MÁNCORA </li>
+                        <li>RECOJO DESDE HOTEL PARA RELIZAR EL TOUR</li>
+                        <li>CHALECO SALVAVIDAS</li>
+                        <li>INGRESO DESDE LA ORILLA EN MOTO ACUÁTICA</li>
+                        <li>GUIADO Y TOMA DE FOTOGRAFIAS PARA EL RECUERDO</li>
+                        <li> <span class="text-danger"> NO INCLUYE: SERVICIOS NO MENCIONADOS </span> </li>
+                    </ol>
+                    <p>PRECIOS NO VALIDOS PARA FERIADOS, SEMANA SANTA, FIESTAS DE FIN DE AÑO.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="tours2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Isla Faco/ 2N desde <span>s/ 390.00</span> por persona.</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Incluye</p>
+                    <ol>
+                        <li>02 NOCHES DE ALOJAMIENTO CON PISCINA EN HABITACIÓN MATRIMONIAL</li>
+                        <li>DESAYUNOS EN HOTEL</li>
+                        <li>TOUR NADO CON TORTUGAS EN MÁNCORA </li>
+                        <li>INGRESO DESDE LA ORILLA EN MOTO ACUÁTICA </li>
+                        <li>TOUR MANGLARES DE TUMBES (PLAYA PUNTA SAL, PLAYA ZORRITOS, PLAZA DE ARMAS DE TUMBES, PUERTO PIZARRO, ISLA DEL AMOR, ISLA DE LOS PÁJAROS, ISLA HUESO DE BALLENA, LA BOCANA, TÚNEL DEL MANGLAR)</li>
+                        <li>RECOJO DESDE HOTEL PARA RELIZAR EL TOUR</li>
+                        <li>CHALECO SALVAVIDAS</li>
+                        <li>PASEO EN BOTE POR EL MANGLAR</li>
+                        <li>GUIADO Y TOMA DE FOTOGRAFIAS PARA EL RECUERDO</li>
+                        <li> <span class="text-danger"> NO INCLUYE: SERVICIOS NO MENCIONADOS </span> </li>
+                    </ol>
+                    <p>PRECIOS NO VALIDOS PARA FERIADOS, SEMANA SANTA, FIESTAS DE FIN DE AÑO.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="tours3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">PARQUE KURT BEER / 3N desde <span>s/ 450.00</span> por persona.</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Incluye</p>
+                    <ol>
+                        <li>03 NOCHES DE ALOJAMIENTO CON PISCINA EN HABITACIÓN MATRIMONIAL</li>
+                        <li>DESAYUNOS EN HOTEL</li>
+                        <li>TOUR NADO CON TORTUGAS EN MÁNCORA </li>
+                        <li>INGRESO DESDE LA ORILLA EN MOTO ACUÁTICA </li>
+                        <li>TOUR MANGLARES DE TUMBES (PLAYA PUNTA SAL, PLAYA ZORRITOS, PLAZA DE ARMAS DE TUMBES, PUERTO PIZARRO, ISLA DEL AMOR, ISLA DE LOS PÁJAROS, ISLA HUESO DE BALLENA, LA BOCANA, TÚNEL DEL MANGLAR)</li>
+                        <li>RECOJO DESDE HOTEL PARA RELIZAR EL TOUR</li>
+                        <li>CHALECO SALVAVIDAS</li>
+                        <li>PASEO EN BOTE POR EL MANGLAR</li>
+                        <li>GUIADO Y TOMA DE FOTOGRAFIAS PARA EL RECUERDO</li>
+                        <li> <span class="text-danger"> NO INCLUYE: SERVICIOS NO MENCIONADOS </span> </li>
+                    </ol>
+                    <p>PRECIOS NO VALIDOS PARA FERIADOS, SEMANA SANTA, FIESTAS DE FIN DE AÑO.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <footer style="text-align: center;">
+        <p>&copy; 2024 Viajes Únicos. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap (jQuery primero, luego Popper.js, luego Bootstrap JavaScript) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>villa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos para el cuerpo de la página */
+body {
+    background-image: url('vi4.jpg'); /* Reemplaza 'ruta/a/la/imagen/de/fondo.jpg' con la ruta de tu imagen de fondo */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   flex: 1; /* Para que el cuerpo ocupe el espacio restante */
+     
+}  
+
+/* Estilos para las imágenes */
+.isla-img {
+    max-width: 100%;
+   max-height: 200px;
+    
+   border: solid 2px blue;
+}
+
+/* Estilos para el botón */
+.btn-volver {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #0056b3;
+}
+h1
+{
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   font-weight: bold;
+   font-size: 50px;
+   text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">VILLA SAN MIGUEL DE TANGARARA</h1>
+
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="vi1.jpg" class="img-fluid isla-img" alt="Imagen 1">
+        </picture>
+      </div>
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="vi2.jpg" class="img-fluid isla-img" alt="Imagen 2">
+        </picture>
+      </div>
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="vi3.jpg" class="img-fluid isla-img" alt="Imagen 3">
+        </picture>
+      </div>
+    </div>
+   <center>
+        <div class="row mt-5">
+      <div class="col-md-6">
+        <h2>Descripción</h2>
+     <strong>
+        San Miguel de Tangarara se encuentra ubicado en el distrito de Marcavelica a 27.3 km. (46 minutos) de la ciudad de Sullana. El nombre Tangarará, tiene su origen en el Curaca Tangar Arac (que quiere decir, «pantano pluvial con peces»), quien gobernaba el pueblo durante la llegada de los conquistadores españoles. Fundada el 15 de julio de 1532 solo con el nombre de San Miguel por el entonces gobernador Don Francisco Pizarro Gonzales y la comitiva que lo acompañaba en la conquista del Perú, este lugar se constituye en la primera ciudad fundada por los españoles en el pacífico sur. Los acontecimientos ocurridos en esta Villa la convierten en un sitio de gran relevancia, pues marca un hito en la historia del Perú, siendo el lugar donde se da la transculturización, el mestizaje de la cultura aborigen con la española, lo que incluye a la religión católica, oficializándose la primera misa católica. 
+     </strong>
+      </div>
+      
+      <div class="col-md-6">
+        
+            <div style="margin: 20px;">
+                <img src="direccion.png" alt="WhatsApp">
+            
+            <strong>Dirección</strong>
+            <p>458G+3P9, Tangarará 20120, Perú</p>
+        </div>
+       
+        <div class=" map-responsive ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7950.649774785239!2d-80.823776!3d-4.885154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90360714dea57705%3A0xdeefbdee0ed38682!2sVilla%20Hist%C3%B3rica%20%22San%20Miguel%20de%20Tangarar%C3%A1%20%22!5e0!3m2!1ses!2sus!4v1713148524000!5m2!1ses!2sus" width="600" height="450" style="border:solid 3px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+</center>
+
+    <div class="row mt-5">
+      <div class="col text-center">
+        <button class="btn btn-primary" onclick="window.history.back()">Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=TuClaveAPI&callback=initMap" async defer></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

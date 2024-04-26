@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title> 
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+          .cuerpo
+           {
+           
+        background-image: url('fon3.png'); /* Ruta de tu imagen de fondo */
+          background-size: cover; /* Ajustar tamaño de la imagen */
+         background-position: center; /* Posición de la imagen */
+        background-attachment: fixed; /* Fijar la imagen de fondo */
+        background-color: rgba(255, 255, 255, 0.5); /* Color de fondo con opacidad */
+         padding: 20px; /* Espaciado para que el texto no quede pegado al borde */      
+          }
+
+          /* Animación para simular un baile */
+        @keyframes baile {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(10deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(-10deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .somos img {
+            animation: baile 2s infinite; /* Animación de 2 segundos, infinita */
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="logo.jpg" alt="Logotipo" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <div class="texto text-md-right">
+                        <h1 class="texto1">"Agencia de Viajes"</h1>
+                        <p class="text2">El Mundo lo recorres Tu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oferta.html">Ofertas</a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <div class="cuerpo" >
+        <section id="nosotros" class="py-5">
+            <center>
+            <h1 style="text-decoration: overline;color: black;">Sobre Nosotros</h1>
+            
+                <div class="row">
+                     <div class="col-sm-6">
+                        <figure class="somos">
+                            <img src="quien.png" alt="Imagen de la agencia de viajes">
+                        </figure>
+                    </div>
+                    
+                    <div class="col-md-6" >
+                        
+                        <h2>¿Quiénes somos?</h2>
+                       
+                        <p class="parrafo" >Somos una agencia de viajes apasionada por ofrecerte experiencias únicas y memorables.</p>
+                        
+                       <p class="parrafo " >Nuestro equipo de expertos en viajes está comprometido a brindarte un servicio personalizado y a ayudarte a descubrir los destinos más fascinantes del mundo. Ya sea que estés planeando unas vacaciones relajantes en la playa, una emocionante aventura en la naturaleza o una inmersión en la cultura local, estamos aquí para hacer que tus sueños de viaje se hagan realidad.</p>
+                    </div>
+                    
+                    
+                </div>
+        
+        
+            <br><br>
+                <div class="row">
+                    <div class="col-sm-4">
+                      <h2>Visión</h2>
+                      <p class="parrafo">Nuestra visión es convertirnos en la agencia de viajes preferida a nivel mundial, reconocida por nuestra excelencia en servicio al cliente, nuestra pasión por los viajes responsables y nuestra contribución al desarrollo sostenible de las comunidades locales en cada destino que visitamos.</p>
+                    </div>
+                    <div class="col-md-3"> 
+                        <figure class="">
+                            <img src="somos.jpg" alt="Imagen de la agencia de viajes">
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <h2>Misión</h2>
+                        <p class="parrafo">Nuestra misión es proporcionar experiencias de viaje únicas y memorables, cuidadosamente diseñadas para satisfacer las necesidades y deseos de cada uno de nuestros clientes. Nos comprometemos a ofrecer un servicio personalizado, garantizando la máxima calidad y seguridad en cada etapa del viaje.</p>
+                    </div>
+                    
+                </div>
+            </center>
+        </section>
+    </div>
+    <footer style="text-align: center;">
+        <p>&copy; 2024 Viajes Únicos. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html

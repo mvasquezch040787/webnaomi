@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cabo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos para el cuerpo de la página */
+body {
+    background-image: url('pla4.jpg'); /* Reemplaza 'ruta/a/la/imagen/de/fondo.jpg' con la ruta de tu imagen de fondo */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   flex: 1; /* Para que el cuerpo ocupe el espacio restante */
+     
+}  
+
+/* Estilos para las imágenes */
+.isla-img {
+    max-width: 100%;
+   max-height: 200px;
+    
+   border: solid 2px blue;
+}
+
+/* Estilos para el botón */
+.btn-volver {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #0056b3;
+}
+h1
+{
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   font-weight: bold;
+   font-size: 50px;
+   text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">PLAYA CABO BLANCO</h1>
+
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="pla1.jpg" class="img-fluid isla-img" alt="Imagen 1">
+        </picture>
+      </div>
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="pla2.jpg" class="img-fluid isla-img" alt="Imagen 2">
+        </picture>
+      </div>
+      <div class="col-md-4">
+        <picture>
+          <source >
+          <img src="pla3.jpg" class="img-fluid isla-img" alt="Imagen 3">
+        </picture>
+      </div>
+    </div>
+   <center>
+        <div class="row mt-5">
+      <div class="col-md-6">
+        <h2>Descripción</h2>
+        <strong>
+            Cabo Blanco, una playa de aguas limpias y un paisaje realmente llamativo
+        </strong>
+        <br>
+   <strong>
+    Llegar a esta playa, sin duda una de las mejores del norte peruano, puede hacerse en tres direcciones. La primera, descender por el serpentín del distrito El Alto, hasta llegar a destino. En el descenso, se observa a plenitud el mar, el nuevo embarcadero pesquero artesanal, las embarcaciones pesqueras, las viviendas de la caleta y también pozos petrolíferos ubicados en la zona marítima.
+   </strong>
+      </div>
+      
+      <div class="col-md-6">
+        
+            <div style="margin: 20px;">
+                <img src="direccion.png" alt="WhatsApp">
+            
+            <strong>Dirección</strong>
+            <p>Carr. Cabo Blanco - El Nuro 12</p>
+        </div>
+       
+        <div class=" map-responsive ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31830.66176331767!2d-81.25893294524414!3d-4.252777476145036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1splaya%20cabo%20blanco%20piura!5e0!3m2!1ses!2spe!4v1713146529108!5m2!1ses!2spe" width="600" height="450" style="border:solid 3px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+</center>
+
+    <div class="row mt-5">
+      <div class="col text-center">
+        <button class="btn btn-primary" onclick="window.history.back()">Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=TuClaveAPI&callback=initMap" async defer></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

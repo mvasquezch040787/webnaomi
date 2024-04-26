@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title> 
+    <style>
+        .transparent-div {
+            background-color: transparent;
+        }
+
+     /* CSS personalizado */
+@keyframes fadeInWelcome {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDescription {
+    33% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSlogan {
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.texto4 {
+    animation: fadeInWelcome 3s ease-in-out forwards; /* Aplica la animación para "Bienvenido a Nuestra Agencia" */
+}
+
+.text2 {
+    animation: fadeInDescription 3s ease-in-out forwards; /* Aplica la animación para "Ven y Conoce las 8 Maravillas de Piura" */
+}
+
+.slogan {
+    animation: fadeInSlogan 3s ease-in-out forwards; /* Aplica la animación para el eslogan */
+}
+
+    </style>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark name">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="logo.jpg" alt="Logotipo" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <div class="texto text-md-right">
+                        <h1 class="texto1">"Agencia de Viajes"</h1>
+                        <p class="">El Mundo lo recorres Tu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oferta.html">Ofertas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="cuerpo overlay">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg transparent-div">
+            <h2 class="texto4"> Bienvenido a Nuestra Agencia -</h2>
+            <p style="font-family: cursive; font-size: 20px; color: black;" class="text2"> Ven y Conoce las 8 Maravillas de Piura</p>
+        </nav>
+        <div class="">
+            <!-- Sección de inicio -->
+            <section id="inicio" class="py-5">
+                <div class="container">
+                    <!-- Div transparente con eslogan -->
+                    <div class="transparent-div">
+                        <h2 class="slogan">
+                            "Sumérgete en la riqueza cultural y natural de Piura: ¡Embárcate en un viaje inolvidable para descubrir sus siete maravillas, donde cada rincón teje historias ancestrales y paisajes deslumbrantes! Desde las doradas playas de Colán hasta las místicas pirámides de Túcume, Piura te invita a explorar su diversidad y a sentir la calidez de su gente. ¡Ven y vive la experiencia única de conocer las maravillas que hacen de Piura un destino incomparable en el norte del Perú!"</h2>
+                    </div>
+                </div>
+            </section>
+            <center>
+                <div style="padding: 10px;">
+                    <p><a href="destinos.html" class="boton">Ver Destinos</a></p>
+                </div>
+            </center>
+            <!-- Tabla con imágenes -->
+            <section id="imagenes" class="py-5">
+                <div class="container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><img src="uno.jpg" class="img-fluid"></td>
+                                <td><img src="dos.jpg" class="img-fluid"></td>
+                                <td><img src="tres.jpg" class="img-fluid"></td>
+                                <td><img src="cuatro.jpg" class="img-fluid"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer style="text-align: center;">
+        <p>&copy; 2024 Viajes Únicos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
